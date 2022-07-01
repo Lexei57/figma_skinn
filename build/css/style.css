@@ -1,0 +1,510 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0 50px;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Inter", sans-serif;
+}
+
+@font-face {
+  font-family: "stsong";
+  src: url("../fonts/chinese.stsong.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+.tool {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 36px;
+  margin-bottom: 37px;
+}
+
+.links {
+  display: flex;
+  gap: 40px;
+}
+.links a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #222;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.counter__number {
+  background-color: #E7DED8;
+  border: none;
+  padding-left: 8px;
+  width: 24px;
+  height: 24px;
+}
+
+.main-collection {
+  position: relative;
+}
+
+.main-collection__face-bcg {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-collection__motto {
+  position: absolute;
+  width: 520px;
+  top: 150px;
+  left: 50px;
+  font-family: "stsong";
+  font-weight: 300;
+  font-size: 88px;
+  line-height: 126px;
+  color: #000;
+}
+.main-collection__motto button {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #68513F;
+  width: 143px;
+  height: 45px;
+  background-color: #F1EBE7;
+  border: 1px solid #DACEC6;
+  cursor: pointer;
+}
+
+.main-collection__you {
+  font-family: "Style Script", cursive;
+  font-weight: 400;
+  font-size: 175px;
+  line-height: 182px;
+  color: #68513f;
+  position: absolute;
+  top: 410px;
+  left: 500px;
+  transform: rotate(7deg);
+}
+
+.albumn {
+  margin-top: 20px;
+}
+
+.sections {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  gap: 700px;
+}
+
+.sections__item1 {
+  width: 282px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  gap: 188px;
+  margin-left: 50px;
+}
+
+.png-hands {
+  align-self: flex-start;
+}
+
+.png-bottle {
+  align-self: flex-end;
+}
+
+.sections__item2 {
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+}
+
+.png-rock {
+  padding-top: 44px;
+  align-self: center;
+}
+
+.png-fingers {
+  padding-top: 189px;
+}
+
+.decision-block {
+  position: absolute;
+  width: 525px;
+  text-align: center;
+  padding-top: 230px;
+  font-family: "stsong";
+  font-weight: 300;
+  font-size: 65px;
+  line-height: 98px;
+  color: #000;
+}
+.decision-block button {
+  width: 95px;
+  height: 45px;
+  border-radius: 73px;
+  background-color: #f1ebe7;
+  border: 1px solid #dacec6;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #68513f;
+}
+
+.skincare-rotate {
+  font-family: "Style Script", cursive;
+  font-weight: 400;
+  font-size: 137px;
+  line-height: 112px;
+  color: #68513f;
+  transform: rotate(-5deg);
+}
+
+.decision-block-text {
+  width: 649px;
+  padding-top: 19px;
+  margin-left: -60px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+}
+
+.products {
+  padding-top: 850px;
+}
+
+.products__promo-img {
+  display: flex;
+  justify-content: center;
+}
+
+.product__description {
+  text-align: center;
+  padding-top: 90px;
+}
+.product__description :nth-child(1) {
+  font-family: "Style Script", cursive;
+  font-weight: 400;
+  font-size: 137px;
+  line-height: 112px;
+  color: #68513f;
+}
+.product__description :nth-child(2) {
+  font-family: "stsong";
+  font-weight: 300;
+  font-size: 65px;
+  line-height: 98px;
+  color: #000;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+}
+
+.card {
+  background-color: #e7ded8;
+  width: 352px;
+  padding: 0 20px;
+  padding-top: 20px;
+  border-radius: 10px;
+}
+.card button {
+  width: 305px;
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid #dacec6;
+  background-color: #F1EBE7;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #68513f;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.card__name-price {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  gap: 100px;
+}
+
+.card-description {
+  padding-top: 6px;
+  margin-left: 10px;
+  padding-bottom: 53px;
+}
+
+.main-information {
+  padding-top: 90px;
+  display: flex;
+  gap: 240px;
+}
+
+.main-information__description {
+  text-align: center;
+}
+.main-information__description :nth-child(1) {
+  font-family: "Style Script", cursive;
+  font-weight: 400;
+  font-size: 137px;
+  line-height: 112px;
+  color: #68513f;
+}
+.main-information__description :nth-child(2) {
+  font-family: "stsong";
+  font-weight: 300;
+  font-size: 70px;
+  line-height: 98px;
+  color: #000;
+}
+.main-information__description :nth-child(3) {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 31px;
+  color: #000;
+  padding-bottom: 51px;
+}
+.main-information__description button {
+  width: 115px;
+  height: 45px;
+  background-color: #f1ebe7;
+  border: 1px solid #dacec6;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #68513f;
+}
+
+.about-us__description {
+  padding-top: 202px;
+  display: flex;
+  justify-content: center;
+}
+.about-us__description p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 39px;
+  color: #000;
+  text-align: center;
+  width: 832px;
+}
+
+.lables {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  padding-top: 67px;
+  padding-bottom: 209px;
+}
+
+.collection {
+  display: flex;
+  margin-left: -50px;
+  padding-bottom: 92px;
+}
+.collection img {
+  width: 505px;
+  height: 518px;
+}
+
+.collection-item {
+  position: relative;
+}
+.collection-item button {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  top: calc(50% - 75px);
+  left: calc(50% - 75px);
+  cursor: pointer;
+}
+
+.blog__naming {
+  font-family: "stsong";
+  font-weight: 300;
+  font-size: 66px;
+  line-height: 98px;
+  color: #000;
+  text-align: center;
+  padding-bottom: 51px;
+}
+
+.blog-cards {
+  display: flex;
+  gap: 140px;
+}
+
+.blog-card__card {
+  display: flex;
+  gap: 30px;
+}
+.blog-card__card p {
+  width: 269px;
+  padding-bottom: 58px;
+  font-family: "stsong";
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 36px;
+  color: #000;
+}
+.blog-card__card button {
+  width: 115px;
+  height: 45px;
+  border-radius: 166px;
+  background-color: #f1ebe7;
+  border: 1px solid #dacec6;
+}
+
+footer {
+  border-radius: 10px;
+  padding: 50px;
+  margin-top: 128px;
+  background-color: #e7ded8;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links__column1 {
+  display: flex;
+  flex-direction: column;
+}
+.footer-links__column1 :nth-child(2) {
+  padding-top: 21px;
+  width: 160px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+}
+.footer-links__column1 :nth-child(3) {
+  padding-top: 57px;
+  width: 160px;
+  white-space: pre;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+}
+.footer-links__column1 a {
+  color: #68513f;
+  text-decoration: none;
+}
+.footer-links__column1 img {
+  width: 86px;
+  height: 26px;
+}
+
+.footer-links__column2 p {
+  font-family: "stsong";
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 39px;
+  color: #000;
+}
+
+.pages {
+  display: flex;
+  gap: 53px;
+  padding-top: 29px;
+}
+
+.pages__column {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.pages__column a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #000;
+}
+
+.contact-us-text {
+  padding-bottom: 29px;
+  font-family: "stsong";
+  font-weight: 300;
+  font-size: 27px;
+  line-height: 39px;
+  color: #000;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  padding-bottom: 39px;
+}
+.contact-text a {
+  text-decoration: none;
+  color: #68513f;
+}
+
+.main-work {
+  font-family: "stsong";
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 39px;
+  color: #000;
+  padding-bottom: 29px;
+}
+
+.work-time-block {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding-bottom: 72px;
+}
+.work-time-block p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+}
+
+.social {
+  display: flex;
+  gap: 40px;
+}
